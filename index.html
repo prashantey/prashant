@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,14 +15,14 @@
     <!-- Navbar Section -->
     <header>
         <div class="navbar">
-            <img src="logo.PNG" alt="logo">
+            <img src="images/logo.PNG" alt="logo">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Project</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <button>Download resume</button>
+            <button><a href="#" download="resume.pdf">Download CV</a></button>
         </div>
     </header>
     <!-- Navbar Section End-->
@@ -35,15 +35,20 @@
                     <div class="texts">
                         <h1>Hi, I'm Prashant heroo</h1>
                         <span>Front-End & Backend Developer</span>
-                        <p>From Damak-5, Jhapa Nepal</p>
+                        <h4>From Damak-5, Jhapa Nepal</h4>
+                        <p>I specialize in creating dynamic, user-friendly web applications with a focus on both
+                            front-end and back-end development. With expertise in technologies such as JavaScript,
+                            React, Node.js, Python, Django, and SQL.</p>
                         <div class="icons">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-github"></i>
-                            <i class="fa-brands fa-instagram"></i>
+                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/prashantey" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/pr4shanteyy/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="image">
-                        <img src="image.png" alt="main-hero">
+                        <img src="images/image.png" alt="main-hero">
                     </div>
                 </div>
             </div>
@@ -65,7 +70,119 @@
     </main>
     <!-- Main Section End-->
 
+    <!-- About section -->
+    <section class="about-section">
+        <h2>About Prashant heroo</h2>
+        <p>My Skills and Expertise
+        </p>
+        <div class=" grid grid-three--cols">
+            <div class="course-div">
+                <div class="icon">
+                    <i class="fa-brands codes fa-js"></i>
+                </div>
+                <h3 class="section-common--title">JS Development</h3>
+                <p>
+                    Developing dynamic, interactive web applications using JavaScript to enhance user engagement.
+                </p>
+            </div>
+            <div class="course-div">
+                <div class="icon">
+                    <i class="fa-brands codes fa-python"></i>
+                </div>
+                <h3 class="section-common--title">Python</h3>
+                <p>
+                    Utilizing Python and Django for versatile problem-solving and robust application development.
+                </p>
+            </div>
+            <div class="course-div">
+                <div class="icon">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <h3 class="section-common--title">React JS</h3>
+                <p>
+                    Building dynamic, user-friendly interfaces with React.js
+                </p>
+            </div>
+            <div class="course-div">
+                <div class="icon">
+                    <i class="fa-brands fa-node-js"></i>
+                </div>
+                <h3 class="section-common--title">Node JS</h3>
+                <p>
+                    Building scalable backend applications using Node.js effectively
+                </p>
+            </div>
+            <div class="course-div">
+                <div class="icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="section-common--title">SQL Development</h3>
+                <p>
+                    Efficiently managing and retrieving data using SQL for optimized database solutions.
+                </p>
+            </div>
 
+            <div class="course-div">
+                <div class="icon">
+                    <i class="fa-brands codes fa-css3-alt"></i>
+                </div>
+                <h3 class="section-common--title">CSS Development</h3>
+                <p>
+                    Designing and styling web elements to create visually appealing and user-friendly websites.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About section End-->
+
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Get in touch with me.....
+        </p>
+        <form action="#">
+            <div class="container">
+                <div class="mb-3">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required autocomplete="off"
+                        placeholder="enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="username">Email</label>
+                    <input type="email" name="email" id="email" required autocomplete="off" placeholder="abc@abc.com">
+                </div>
+                <div class="mb-3">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="title of Your Message" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="enter your message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn btn-submit">Send message</button>
+                </div>
+            </div>
+            </div>
+
+        </form>
+    </section>
+
+
+
+    <!-- Start footer section -->
+    <footer>
+        <div class="logo-brand">
+            <p>&copy; 2024 Prashant Heroo, All rights reserved.</p>
+            <div class="icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/prashantey" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/pr4shanteyy/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer section -->
 </body>
 
 </html>
